@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interruptor de Modo Escuro</title>
+  <meta name="description" content="Adicione uma alternância de tema de modo escuro com um switch personalizado Bootstrap">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌓</text></svg>">
+  
+  <meta property="og:site_name" content="GitHub">
+  <meta property="og:image"
+    content="https://github.com/Guilherme-Sbizero">
+  <meta property="og:title" content="switch-modo-escuro">
+  <meta property="og:description" content="Adicione uma alternância de tema de modo escuro com um switch personalizado Bootstrap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+
+  <!-- Polyfill do IE 11 para CSS e propriedades personalizadas -->
+  <script
+    nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4/ie11CustomProperties.min.js"><\/script>');</script>
+
+  <link rel="stylesheet" href="dark-mode.css">
+</head>
+<body class="bg-white text-center d-flex h-100">
+
+  <div class="container d-flex p-3 mx-auto w-100 flex-column">
+    <header class="mb-auto">
+      <div class="float-md-start fw-bold fs-5">Interruptor de Modo Escuro</div>
+      <nav class="nav justify-content-center float-md-end">
+        <a class="nav-link active" href="#">Início</a>
+        <a class="nav-link" href="https://github.com/Guilherme-Sbizero" target="_blank">GitHub</a>
+        <div class="nav-link">
+
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Modo Escuro</label>
+          </div>
+          <script src="dark-mode-switch.min.js"></script>
+
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <h1>🌓 Interruptor de Modo Escuro</h1>
+      <p class="lead">Adicione um interruptor de tema de modo escuro com um switch personalizado Bootstrap</p>
+      <ul class="list-unstyled">
+        <li>&middot; Usa o armazenamento local para salvar a preferência</li>
+        <li>&middot; Apenas 383 Bytes minificados e compactados com gzip!</li>
+      </ul>
+    </main>
+
+    <footer class="mt-auto">
+      <p>&copy; 2024</p> 
+    </footer>
+  </div>
+</body>
+</html>
